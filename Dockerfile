@@ -9,6 +9,9 @@ RUN apt-get update && apt-get install -y \
     python3-setuptools \
     python-dev-is-python3 \
     ffmpeg \
+    libasound2-dev \
+    portaudio19-dev \
+    python3-pyaudio \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install -r requirements.txt
